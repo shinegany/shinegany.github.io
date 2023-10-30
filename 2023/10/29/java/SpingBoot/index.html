@@ -16,21 +16,25 @@
   <meta name="author" content="Shine Gany">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="一、Springboot 简介目的：设计目的是用来简化Spring应用的初始搭建以及开发过程  Spring程序和SpringBoot程序对比    SpringBoot项目快速启动   对SpringBoot项目打包（执行Maven构建指令package)  执行启动命令（cmd中） java -jar springboot.jar 注：jar支持命令行启动需要依赖maven插件支持，请确认打包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/10/29/hello-world/index.html">
+<meta property="og:title" content="SpingBoot">
+<meta property="og:url" content="http://example.com/2023/10/29/java/SpingBoot/index.html">
 <meta property="og:site_name" content="Shine~">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="一、Springboot 简介目的：设计目的是用来简化Spring应用的初始搭建以及开发过程  Spring程序和SpringBoot程序对比    SpringBoot项目快速启动   对SpringBoot项目打包（执行Maven构建指令package)  执行启动命令（cmd中） java -jar springboot.jar 注：jar支持命令行启动需要依赖maven插件支持，请确认打包">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-29T09:20:46.951Z">
-<meta property="article:modified_time" content="2023-10-29T09:18:46.788Z">
+<meta property="og:image" content="http://example.com/img%5CSpingBoot%5Cimage-20220630223033876.png">
+<meta property="og:image" content="http://example.com/img%5CSpingBoot%5Cimage-20230418102359760.png">
+<meta property="article:published_time" content="2023-10-29T10:13:19.000Z">
+<meta property="article:modified_time" content="2023-10-30T09:15:05.404Z">
 <meta property="article:author" content="Shine Gany">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img%5CSpingBoot%5Cimage-20220630223033876.png">
   
   
   
-  <title>Hello World - Shine~</title>
+  <title>SpingBoot - Shine~</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -225,7 +229,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="SpingBoot"></span>
           
         </div>
 
@@ -236,8 +240,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-29 17:20" pubdate>
-          2023年10月29日 下午
+        <time datetime="2023-10-29 18:13" pubdate>
+          2023年10月29日 晚上
         </time>
       </span>
     
@@ -248,7 +252,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          2.3k 字
         
       </span>
     
@@ -259,7 +263,7 @@
         
         
         
-          4 分钟
+          20 分钟
         
       </span>
     
@@ -304,24 +308,114 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">SpingBoot</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h2 id="一、Springboot-简介"><a href="#一、Springboot-简介" class="headerlink" title="一、Springboot 简介"></a>一、Springboot 简介</h2><p>目的：设计目的是用来简化Spring应用的初始搭建以及开发过程</p>
+<ul>
+<li>Spring程序和SpringBoot程序对比</li>
+</ul>
+<p><img src="/img%5CSpingBoot%5Cimage-20220630223033876.png" srcset="/img/loading.gif" lazyload alt="image-20220630223033876"></p>
+<ol>
+<li>SpringBoot项目快速启动</li>
+</ol>
+<ul>
+<li><p>对SpringBoot项目打包（执行Maven构建指令package)</p>
+</li>
+<li><p>执行启动命令（cmd中）</p>
+<p><code>java -jar springboot.jar</code></p>
+<p><strong>注：</strong>jar支持命令行启动需要依赖maven插件支持，请确认打包时是否具有SpringBoot对应的maven插件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">build</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">plugins</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">plugins</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">build</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>快速启动有利于我们脱离开IDEA和tomcat运行一个springboot工程</p>
+</li>
+</ul>
+<ol start="2">
+<li><p>SpringBoot起步依赖</p>
+<ul>
+<li>starter<ul>
+<li>SpringBoot中常见项目名称，定义了当前项目使用的所有项目坐标，以达到减少依赖配置的目的</li>
+</ul>
+</li>
+<li>parent<ul>
+<li>所有SpringBoot项目要继承的项目，定义了若干个坐标版本号（依赖管理，而非依赖），以达到减少依赖冲突的目的</li>
+</ul>
+</li>
+<li>实际开发<ul>
+<li>使用任意坐标时，仅书写GAV中的G和A，V由SpringBoot提供如发生坐标错误，再指定version(要小心版本冲突)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>使用maven依赖管理变更起步依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>	<span class="hljs-comment">&lt;!--web起步依赖环境中，排除Tomcat起步依赖- -&gt;</span><br><span class="hljs-comment">	&lt;exclusions&gt;</span><br><span class="hljs-comment">		&lt;exclusion&gt;</span><br><span class="hljs-comment">			&lt;groupId&gt;org.springframework.boot&lt;/ groupId&gt;</span><br><span class="hljs-comment">			&lt;artifactId&gt;spring -boot -starter-tomcat&lt;/artifactId&gt;</span><br><span class="hljs-comment">		&lt;/exclusion&gt;</span><br><span class="hljs-comment">	&lt;/exclusions&gt;</span><br><span class="hljs-comment">    &lt;/dependency&gt;</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">    &lt;!--添加Detty起步依赖，版本SpringBoot的starter控制--&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-jetty<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span><br><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Jetty比Tomcat更轻量级，可扩展性更强(相较于Tomcat)，谷歌应用引擎(GAE) 已经全面切换为Jetty</li>
+</ul>
+</li>
+</ol>
+<h2 id="二、基础配置"><a href="#二、基础配置" class="headerlink" title="二、基础配置"></a>二、基础配置</h2><ol>
+<li>三种配置文件格式</li>
+</ol>
+<ul>
+<li><p>application.properties</p>
+<p><code>server.port = 80</code></p>
+</li>
+<li><p>application.yml（主流）</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">server:</span><br><span class="hljs-symbol">	port:</span> <span class="hljs-number">81</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>application.yaml</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">server:</span><br><span class="hljs-symbol">	port:</span> <span class="hljs-number">82</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li>yaml数据读取</li>
+</ol>
+<ul>
+<li>使用@Value读取单个数据，属性名引用方式：${一级属性名.二级属性名……}</li>
+<li>封装全部数据到Environment对象</li>
+<li>自定义对象封装指定数据（比如Mybatis配置类）</li>
+</ul>
+<ol start="3">
+<li>多环境启动</li>
+</ol>
+<p><img src="/img%5CSpingBoot%5Cimage-20230418102359760.png" srcset="/img/loading.gif" lazyload alt="image-20230418102359760"></p>
+<ol start="4">
+<li>配置文件分类</li>
+</ol>
+<ul>
+<li>SpringBoot中4级配置文件<ul>
+<li>1级: file : config&#x2F;application. yml  -&gt;最高</li>
+<li>2级: file : application.yml</li>
+<li>3级: classpath: config&#x2F;application. yml</li>
+<li>4级: classpath: application. yml -&gt;最低</li>
+</ul>
+</li>
+<li>作用:<ul>
+<li>1级与2级留做系统打包后设置通用属性</li>
+<li>3级与4级用于系统开发阶段设置通用属性</li>
+</ul>
+</li>
+</ul>
+<h2 id="三、整合第三方技术"><a href="#三、整合第三方技术" class="headerlink" title="三、整合第三方技术"></a>三、整合第三方技术</h2><ul>
+<li>整合JUnit</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@SpringBootTest</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringbootTests</span>&#123;<br>    <span class="hljs-meta">@Autowired</span><br>    <span class="hljs-keyword">private</span> BookService bookservice;<br>    <br>    <span class="hljs-meta">@Test</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">testsave</span><span class="hljs-params">()</span>&#123;<br>		bookservice.save();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>整合MyBatis</p>
+<ul>
+<li>设置数据源参数</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">spring:</span><br>	<span class="hljs-attr">datasource :</span><br>		<span class="hljs-attr">type:</span> <span class="hljs-string">com.alibaba.druid.poo1.DruidDataSource</span><br>		<span class="hljs-attr">driver-class-name:</span> <span class="hljs-string">com.mysql.cj.jdbc.Driver</span><br>		<span class="hljs-attr">ur1:</span> <span class="hljs-string">jdbc:mysq1://localhost:3306/ssm_db</span><br>		<span class="hljs-attr">use rname:</span> <span class="hljs-string">root</span><br>		<span class="hljs-attr">password:</span> <span class="hljs-string">root</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<ul>
+<li>定义数据层接口与映射配置</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-string">@Mapper</span><br><span class="hljs-string">public</span> <span class="hljs-string">interface</span> <span class="hljs-string">UserDao</span> &#123;<br>	<span class="hljs-string">@Select(&quot;select</span> <span class="hljs-string">*</span> <span class="hljs-string">from</span> <span class="hljs-string">user&quot;)</span><br>    <span class="hljs-string">pub1ic</span> <span class="hljs-string">List&lt;User&gt;</span> <span class="hljs-string">getA11();</span><br>&#125;<br></code></pre></td></tr></table></figure></li>
+</ul>
 
                 
               </div>
@@ -330,6 +424,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%A1%86%E6%9E%B6/" class="category-chain-item">框架</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Java/" class="print-no-link">#Java</a>
+      
+    </div>
   
 </div>
 
@@ -339,8 +461,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2023/10/29/hello-world/</div>
+      <div>SpingBoot</div>
+      <div>http://example.com/2023/10/29/java/SpingBoot/</div>
     </div>
     <div class="license-meta">
       
@@ -384,15 +506,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/29/java/Spring/" title="Spring">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Spring</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/10/29/java/MyBatisPlus/" title="MyBatisPlus">
+                        <span class="hidden-mobile">MyBatisPlus</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
