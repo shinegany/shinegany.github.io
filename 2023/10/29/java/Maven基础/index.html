@@ -16,27 +16,27 @@
   <meta name="author" content="Shine Gany">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Maven基础一、Maven简介maven是什么 Maven本质是一个项目管理工具，将项目开发和管理过程抽象成一个项目对象模型（POM） POM：项目对象模型   Maven作用 项目构建：提供标准的、跨平台的自动化项目构建方式 依赖管理：方便快捷的管理项目依赖的资源（jar包），避免资源见版本冲突 统一开发结构：提供标准的、统一的项目结构  Maven基础概念（一）仓库：用于存储资源，包含各种j">
+    <meta name="description" content="Maven基础一、Maven简介maven是什么 Maven本质是一个项目管理工具，将项目开发和管理过程抽象成一个项目对象模型（POM） POM：项目对象模型    Maven作用 项目构建：提供标准的、跨平台的自动化项目构建方式 依赖管理：方便快捷的管理项目依赖的资源（jar包），避免资源见版本冲突 统一开发结构：提供标准的、统一的项目结构  Maven基础概念（一）仓库：用于存储资源，包含各种">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven基础">
 <meta property="og:url" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Shine~">
-<meta property="og:description" content="Maven基础一、Maven简介maven是什么 Maven本质是一个项目管理工具，将项目开发和管理过程抽象成一个项目对象模型（POM） POM：项目对象模型   Maven作用 项目构建：提供标准的、跨平台的自动化项目构建方式 依赖管理：方便快捷的管理项目依赖的资源（jar包），避免资源见版本冲突 统一开发结构：提供标准的、统一的项目结构  Maven基础概念（一）仓库：用于存储资源，包含各种j">
+<meta property="og:description" content="Maven基础一、Maven简介maven是什么 Maven本质是一个项目管理工具，将项目开发和管理过程抽象成一个项目对象模型（POM） POM：项目对象模型    Maven作用 项目构建：提供标准的、跨平台的自动化项目构建方式 依赖管理：方便快捷的管理项目依赖的资源（jar包），避免资源见版本冲突 统一开发结构：提供标准的、统一的项目结构  Maven基础概念（一）仓库：用于存储资源，包含各种">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601210957232.png">
-<meta property="og:image" content="http://example.com/1/image-20220601210919279.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211046239.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211334701.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211456631.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211536358.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211552337.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211759599.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601210957232.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601210919279.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211046239.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211334701.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211456631.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211536358.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211552337.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211759599.png">
 <meta property="article:published_time" content="2023-10-29T10:13:19.000Z">
-<meta property="article:modified_time" content="2023-10-30T09:11:56.296Z">
+<meta property="article:modified_time" content="2023-10-31T04:29:50.540Z">
 <meta property="article:author" content="Shine Gany">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601210957232.png">
+<meta name="twitter:image" content="http://example.com/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601210957232.png">
   
   
   
@@ -323,13 +323,16 @@
 <li>Maven本质是一个项目管理工具，将项目开发和管理过程抽象成一个项目对象模型（POM）</li>
 <li>POM：项目对象模型</li>
 </ul>
-<p><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601210957232.png" srcset="/img/loading.gif" lazyload alt="image-20220601214627492"></p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601210957232.png" srcset="/img/loading.gif" lazyload class title="image-20220601214627492">
+
 <h3 id="Maven作用"><a href="#Maven作用" class="headerlink" title="Maven作用"></a>Maven作用</h3><ul>
 <li>项目构建：提供标准的、跨平台的自动化项目构建方式</li>
 <li>依赖管理：方便快捷的管理项目依赖的资源（jar包），避免资源见版本冲突</li>
 <li>统一开发结构：提供标准的、统一的项目结构</li>
 </ul>
-<h3 id="Maven基础概念"><a href="#Maven基础概念" class="headerlink" title="Maven基础概念"></a>Maven基础概念</h3><p>（一）仓库：用于存储资源，包含各种jar包<br><img src="/1/image-20220601210919279.png" srcset="/img/loading.gif" lazyload alt="image-20220601210919279"></p>
+<h3 id="Maven基础概念"><a href="#Maven基础概念" class="headerlink" title="Maven基础概念"></a>Maven基础概念</h3><p>（一）仓库：用于存储资源，包含各种jar包</p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601210919279.png" srcset="/img/loading.gif" lazyload class title="image-20220601210919279">
+
 <ul>
 <li>私服的作用：<ul>
 <li>加快开发效率</li>
@@ -354,7 +357,9 @@
 </ul>
 <p>（3）作用</p>
 <p>​	使用唯一标识，唯一性定位资源位置，通过该标识可以将资源的识别与下载工作交由机器完成</p>
-<h2 id="二、Maven项目"><a href="#二、Maven项目" class="headerlink" title="二、Maven项目"></a>二、Maven项目</h2><p>（一）Maven的目录结构<br><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211046239.png" srcset="/img/loading.gif" lazyload alt="image-20220601211046239"></p>
+<h2 id="二、Maven项目"><a href="#二、Maven项目" class="headerlink" title="二、Maven项目"></a>二、Maven项目</h2><p>（一）Maven的目录结构</p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211046239.png" srcset="/img/loading.gif" lazyload class title="image-20220601211046239">
+
 <ul>
 <li>在src同层目录下创建pom.xml文件<br>pom.xml<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span>?&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span></span><br><span class="hljs-tag">    <span class="hljs-attr">xmIns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span><br><span class="hljs-tag">    <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;</span>&gt;</span><br>   <br>    <span class="hljs-tag">&lt;<span class="hljs-name">modelVersion</span>&gt;</span>4.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">modelVersion</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupld</span>&gt;</span>com.shine<span class="hljs-tag">&lt;/<span class="hljs-name">groupld</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactld</span>&gt;</span>project-java<span class="hljs-tag">&lt;/<span class="hljs-name">artifactld</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">packaging</span>&gt;</span>jar<span class="hljs-tag">&lt;/<span class="hljs-name">packaging</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">groupld</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupld</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">artifactld</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactld</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>4.12<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
 </ul>
@@ -390,14 +395,16 @@
 <li>直接依赖：在当前项目中通过依赖配置建立依赖关系</li>
 <li>间接依赖：被资源的资源如果依赖其他资源。当前项目间接依赖其他资源</li>
 </ul>
-<p><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211334701.png" srcset="/img/loading.gif" lazyload alt="image-20220601211334701"></p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211334701.png" srcset="/img/loading.gif" lazyload class title="image-20220601211334701">
+
 <p>（3）依赖传递冲突问题（依赖中出现了相同的资源）</p>
 <ul>
 <li>路径优先:当依赖中出现相同的资源时，层级越深，优先级越低，层级越浅，优先级越高</li>
 <li>声明优先:当资源在相同层级被依赖时，配置顺序靠前的覆盖配置顺序靠后的</li>
 <li>特殊优先:当同级配置了相同资源的不同版本，后配置的覆盖先配置的</li>
 </ul>
-<p><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211456631.png" srcset="/img/loading.gif" lazyload alt="image-20220601211456631"></p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211456631.png" srcset="/img/loading.gif" lazyload class title="image-20220601211456631">
+
 <p>（4）可选依赖</p>
 <blockquote>
 <p>可选依赖指对外隐藏当前所依赖的资源——不透明</p>
@@ -413,13 +420,17 @@
 </ul>
 </li>
 </ul>
-<p><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211536358.png" srcset="/img/loading.gif" lazyload alt="image-20220601211536358"><br>（2）依赖范围传递性（了解即可)</p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211536358.png" srcset="/img/loading.gif" lazyload class title="image-20220601211536358">
+<p>（2）依赖范围传递性（了解即可)</p>
 <ul>
 <li>带有依赖范围的资源在进行传递时，作用范围将受到影响</li>
 </ul>
-<p><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211552337.png" srcset="/img/loading.gif" lazyload alt="image-20220601211552337"></p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211552337.png" srcset="/img/loading.gif" lazyload class title="image-20220601211552337">
+
 <h2 id="四、生命周期与插件"><a href="#四、生命周期与插件" class="headerlink" title="四、生命周期与插件"></a>四、生命周期与插件</h2><p>（1）项目构建生命周期</p>
-<p>​	Maven构建生命周期描述的是一次构建过程经历了多少个事件<br><img src="/img%5CMaven%E5%9F%BA%E7%A1%80%5Cimage-20220601211759599.png" srcset="/img/loading.gif" lazyload alt="image-20220601211759599"></p>
+<p>​	Maven构建生命周期描述的是一次构建过程经历了多少个事件</p>
+<img src="/2023/10/29/java/Maven%E5%9F%BA%E7%A1%80/image-20220601211759599.png" srcset="/img/loading.gif" lazyload class title="image-20220601211759599">
+
 <p>（2）插件</p>
 <ul>
 <li>插件与生命周期内的阶段绑定，在执行到对应生命周期时执行对应的插件功能</li>
@@ -516,12 +527,6 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
-                    
-                      <a href="/2023/10/29/java/MyBatisPlus/" title="MyBatisPlus">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">MyBatisPlus</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
                     
                   </article>
                   <article class="post-next col-6">

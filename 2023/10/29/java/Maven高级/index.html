@@ -16,30 +16,30 @@
   <meta name="author" content="Shine Gany">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Maven高级一、分模块开发与设计 工程模块与模块划分    分模块开发   模块中仅包含当前模块对应的功能类与配置文件 spring核心配置根据模块功能不同进行独立制作 当前模块所依赖的模块通过导入坐标的形式加入当前模块后才可以使用 web.xml需要加载所有spring核心配置文件  二、聚合 多模块构建维护（实际工程开发中有些模块可能进行更新）  聚合的作用：通过建立一个聚合模块，该模块管理">
+    <meta name="description" content="Maven高级一、分模块开发与设计 工程模块与模块划分     分模块开发   模块中仅包含当前模块对应的功能类与配置文件 spring核心配置根据模块功能不同进行独立制作 当前模块所依赖的模块通过导入坐标的形式加入当前模块后才可以使用 web.xml需要加载所有spring核心配置文件  二、聚合 多模块构建维护（实际工程开发中有些模块可能进行更新）  聚合的作用：通过建立一个聚合模块，该模块管">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven高级">
 <meta property="og:url" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/index.html">
 <meta property="og:site_name" content="Shine~">
-<meta property="og:description" content="Maven高级一、分模块开发与设计 工程模块与模块划分    分模块开发   模块中仅包含当前模块对应的功能类与配置文件 spring核心配置根据模块功能不同进行独立制作 当前模块所依赖的模块通过导入坐标的形式加入当前模块后才可以使用 web.xml需要加载所有spring核心配置文件  二、聚合 多模块构建维护（实际工程开发中有些模块可能进行更新）  聚合的作用：通过建立一个聚合模块，该模块管理">
+<meta property="og:description" content="Maven高级一、分模块开发与设计 工程模块与模块划分     分模块开发   模块中仅包含当前模块对应的功能类与配置文件 spring核心配置根据模块功能不同进行独立制作 当前模块所依赖的模块通过导入坐标的形式加入当前模块后才可以使用 web.xml需要加载所有spring核心配置文件  二、聚合 多模块构建维护（实际工程开发中有些模块可能进行更新）  聚合的作用：通过建立一个聚合模块，该模块管">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220602153708805.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220602163239035.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605083301264.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605084808886.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605092403870.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605101824399.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605094229734.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605102443823.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605102622754.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605102753319.png">
-<meta property="og:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605103350745.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602163239035.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605083301264.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605084808886.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605092403870.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605101824399.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605094229734.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102443823.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102622754.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102753319.png">
+<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605103350745.png">
 <meta property="article:published_time" content="2023-10-29T10:13:19.000Z">
-<meta property="article:modified_time" content="2023-10-30T09:13:44.957Z">
+<meta property="article:modified_time" content="2023-10-31T04:27:19.667Z">
 <meta property="article:author" content="Shine Gany">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220602153708805.png">
+<meta name="twitter:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png">
   
   
   
@@ -325,7 +325,8 @@
                 <h1 id="Maven高级"><a href="#Maven高级" class="headerlink" title="Maven高级"></a>Maven高级</h1><h2 id="一、分模块开发与设计"><a href="#一、分模块开发与设计" class="headerlink" title="一、分模块开发与设计"></a>一、分模块开发与设计</h2><ol>
 <li>工程模块与模块划分</li>
 </ol>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220602153708805.png" srcset="/img/loading.gif" lazyload alt="image-20220602153708805"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png" srcset="/img/loading.gif" lazyload class title="image-20220602153708805">
+
 <ol start="2">
 <li>分模块开发</li>
 </ol>
@@ -352,7 +353,8 @@
 <h2 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h2><ol>
 <li>模块依赖关系维护</li>
 </ol>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220602163239035.png" srcset="/img/loading.gif" lazyload alt="image-20220602163239035"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602163239035.png" srcset="/img/loading.gif" lazyload class title="image-20220602163239035">
+
 <ol start="2">
 <li>继承</li>
 </ol>
@@ -426,7 +428,8 @@
 </li>
 </ul>
 <h2 id="六、资源配置"><a href="#六、资源配置" class="headerlink" title="六、资源配置"></a>六、资源配置</h2><p>资源多文件配置</p>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605083301264.png" srcset="/img/loading.gif" lazyload alt="image-20220605083301264"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605083301264.png" srcset="/img/loading.gif" lazyload class title="image-20220605083301264">
+
 <p>配置文件引用pom属性</p>
 <ul>
 <li>作用<ul>
@@ -441,7 +444,8 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs xml">&lt;!-―定义自定义属性--&gt;<br><span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">spring.version</span>&gt;</span>5.1.9.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">spring.version</span>&gt;</span>	<br>    <span class="hljs-tag">&lt;<span class="hljs-name">junit.version</span>&gt;</span>4.12<span class="hljs-tag">&lt;/<span class="hljs-name">junit.version</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">jdbc.url</span>&gt;</span>jdbc:mysql://127.0.0.1:3306/ssm_db<span class="hljs-tag">&lt;/<span class="hljs-name">jdbc.ur1</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">build</span>&gt;</span><br>	<span class="hljs-comment">&lt;!--配置资源文件对应的信息--&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">resource</span>&gt;</span><br>            <span class="hljs-comment">&lt;!--设定配置文件对应的位置目录，支持使用属性动态设定路径--&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">directory</span>&gt;</span>$&#123;project.basedir&#125;/src/main/resources<span class="hljs-tag">&lt;/<span class="hljs-name">directory</span>&gt;</span><br>            <span class="hljs-comment">&lt;!--开启对配置文件的资源加载过滤--&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">filtering</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">filtering</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">resource</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">build</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <h2 id="七、多环境开发配置"><a href="#七、多环境开发配置" class="headerlink" title="七、多环境开发配置"></a>七、多环境开发配置</h2><p>（1）多环境兼容</p>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605084808886.png" srcset="/img/loading.gif" lazyload alt="image-20220605084808886"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605084808886.png" srcset="/img/loading.gif" lazyload class title="image-20220605084808886">
+
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--创建多环境--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">profiles</span>&gt;</span><br>    <span class="hljs-comment">&lt;!--定义具体的环境:生产环境--&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">profile</span>&gt;</span><br>       		<span class="hljs-comment">&lt;!--定义环境对应的唯一名称--&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>pro_env<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span><br>        	<span class="hljs-comment">&lt;!--定义环境中换用的属性值--&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span><br>            <span class="hljs-comment">&lt;!--设置默认启动--&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">activation</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">activeByDefault</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">activeByDefault</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">activation</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">profile</span>&gt;</span><br>        <span class="hljs-comment">&lt;!--定义具体的环境:开发环境--&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">profile</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>dep_env<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span><br>    	<span class="hljs-tag">&lt;/<span class="hljs-name">profile</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">profiles</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <p>（2）加载指定环境</p>
@@ -454,7 +458,8 @@
 </li>
 </ul>
 <h2 id="八、私服"><a href="#八、私服" class="headerlink" title="八、私服"></a>八、私服</h2><p>（一）nexus服务器安装与启动</p>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605092403870.png" srcset="/img/loading.gif" lazyload alt="image-20220605092403870"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605092403870.png" srcset="/img/loading.gif" lazyload class title="image-20220605092403870">
+
 <p>（1）Nexus安装、启动与配置</p>
 <ul>
 <li><p>Nexus是Sonatype公司的一款maven私服产品</p>
@@ -466,7 +471,8 @@
 <li><p>访问服务器(默认端口:8081)<br><code>http://localhost:8081</code></p>
 </li>
 </ul>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605101824399.png" srcset="/img/loading.gif" lazyload alt="image-20220605101824399"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605101824399.png" srcset="/img/loading.gif" lazyload class title="image-20220605101824399">
+
 <ul>
 <li>修改基础配置信息<ul>
 <li>安装路径下etc目录中nexus-default.properties文件保存有nexus基础配置信息，例如默认访问端口</li>
@@ -478,7 +484,8 @@
 </li>
 </ul>
 <p>（2）私服资源获取</p>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605094229734.png" srcset="/img/loading.gif" lazyload alt="image-20220605094229734"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605094229734.png" srcset="/img/loading.gif" lazyload class title="image-20220605094229734">
+
 <p>（二）仓库分类与手动上传组件</p>
 <p>（1）仓库分类</p>
 <ul>
@@ -490,7 +497,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605102443823.png" srcset="/img/loading.gif" lazyload alt="image-20220605102443823"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102443823.png" srcset="/img/loading.gif" lazyload class title="image-20220605102443823">
 </li>
 <li><p>代理仓库proxy</p>
 <ul>
@@ -502,8 +509,7 @@
 <li>将若干个仓库组成一个群组，简化配置</li>
 <li>仓库组不能保存资源，属于设计型仓库</li>
 </ul>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605102622754.png" srcset="/img/loading.gif" lazyload alt="image-20220605102622754"></p>
-</li>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102622754.png" srcset="/img/loading.gif" lazyload class title="image-20220605102622754"></li>
 </ul>
 <p>（2）资源上传</p>
 <ul>
@@ -513,14 +519,14 @@
 <li>资源文件</li>
 <li>对应坐标</li>
 </ul>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605102753319.png" srcset="/img/loading.gif" lazyload alt="image-20220605102753319"></p>
-</li>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102753319.png" srcset="/img/loading.gif" lazyload class title="image-20220605102753319"></li>
 </ul>
 <p>（三）本地仓库访问私服</p>
 <ul>
 <li>IDEA环境中资源上传与下载</li>
 </ul>
-<p><img src="/img%5CMaven%E9%AB%98%E7%BA%A7%5Cimage-20220605103350745.png" srcset="/img/loading.gif" lazyload alt="image-20220605103350745"></p>
+<img src="/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605103350745.png" srcset="/img/loading.gif" lazyload class title="image-20220605103350745">
+
 <ul>
 <li>配置本地仓库访问私服的权限（maven库的settings.xml）</li>
 </ul>
@@ -640,8 +646,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/29/java/SpingMVC/" title="SpingMVC">
-                        <span class="hidden-mobile">SpingMVC</span>
+                      <a href="/2023/10/29/java/MyBatisPlus/" title="MyBatisPlus">
+                        <span class="hidden-mobile">MyBatisPlus</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
