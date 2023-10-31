@@ -19,27 +19,27 @@
     <meta name="description" content="Maven高级一、分模块开发与设计 工程模块与模块划分     分模块开发   模块中仅包含当前模块对应的功能类与配置文件 spring核心配置根据模块功能不同进行独立制作 当前模块所依赖的模块通过导入坐标的形式加入当前模块后才可以使用 web.xml需要加载所有spring核心配置文件  二、聚合 多模块构建维护（实际工程开发中有些模块可能进行更新）  聚合的作用：通过建立一个聚合模块，该模块管">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven高级">
-<meta property="og:url" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/index.html">
+<meta property="og:url" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/index.html">
 <meta property="og:site_name" content="Shine~">
 <meta property="og:description" content="Maven高级一、分模块开发与设计 工程模块与模块划分     分模块开发   模块中仅包含当前模块对应的功能类与配置文件 spring核心配置根据模块功能不同进行独立制作 当前模块所依赖的模块通过导入坐标的形式加入当前模块后才可以使用 web.xml需要加载所有spring核心配置文件  二、聚合 多模块构建维护（实际工程开发中有些模块可能进行更新）  聚合的作用：通过建立一个聚合模块，该模块管">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602163239035.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605083301264.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605084808886.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605092403870.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605101824399.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605094229734.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102443823.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102622754.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102753319.png">
-<meta property="og:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605103350745.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602163239035.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605083301264.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605084808886.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605092403870.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605101824399.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605094229734.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102443823.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102622754.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605102753319.png">
+<meta property="og:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220605103350745.png">
 <meta property="article:published_time" content="2023-10-29T10:13:19.000Z">
 <meta property="article:modified_time" content="2023-10-31T04:27:19.667Z">
 <meta property="article:author" content="Shine Gany">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png">
+<meta name="twitter:image" content="http://shinegany.github.io/2023/10/29/java/Maven%E9%AB%98%E7%BA%A7/image-20220602153708805.png">
   
   
   
@@ -81,7 +81,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"5vkeFcH4j6WoE4HE3psD8WtP-gzGzoHsz","app_key":"VhOLyzcKHKgYmknvfK1bmaJQ","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"shinegany.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"5vkeFcH4j6WoE4HE3psD8WtP-gzGzoHsz","app_key":"VhOLyzcKHKgYmknvfK1bmaJQ","server_url":"https://5vkefch4.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -592,7 +592,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Maven高级</div>
-      <div>http://example.com/2023/10/29/java/Maven高级/</div>
+      <div>http://shinegany.github.io/2023/10/29/java/Maven高级/</div>
     </div>
     <div class="license-meta">
       
